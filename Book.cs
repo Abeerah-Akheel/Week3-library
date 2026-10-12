@@ -12,7 +12,16 @@ namespace Library
         public string Author;
         public string ISBN;
 
-        public void DisplayInfo()
+        //Example of a contructor that allows us to 'constuct' a new Book object
+        public Book (string bookTitle, string bookAuthor, string bookISBN)
+        {
+            Title = bookTitle;
+            Author = bookAuthor;
+            ISBN = bookISBN;
+        }
+
+        //Method to display the information about the book
+        void DisplayInfo()
         {
             Console.WriteLine($"Book title: {Title}");
             Console.WriteLine($"Book author: {Author}");
