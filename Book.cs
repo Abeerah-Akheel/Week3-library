@@ -6,21 +6,20 @@ using System.Threading.Tasks;
 
 namespace Library
 {
-    public class Book
+    class Book
     {
-        public string Title;
-        public string Author;
-        public string ISBN;
+        string Title;
+        string Author;
+        string ISBN;
 
-        //Example of a contructor that allows us to 'constuct' a new Book object
-        public Book (string bookTitle, string bookAuthor, string bookISBN)
+        // Example of a constructor that allows us to 'construct' a new Book object
+        Book (string bookTitle, string bookAuthor, string bookISBN)
         {
-            Title = bookTitle;
-            Author = bookAuthor;
-            ISBN = bookISBN;
+            this.Title = bookTitle;
+            this.Author = bookAuthor;
+            this.ISBN = bookISBN;
         }
 
-        //Method to display the information about the book
         void DisplayInfo()
         {
             Console.WriteLine($"Book title: {Title}");
