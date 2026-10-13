@@ -8,6 +8,9 @@ class Program
         // Note how the object name differs from the class name
         Book book = new Book("C# for beginners", "Bill Gates", "1234567");
 
+        Book book1 = new Book("C# Methods and classes", "Microsoft", "55667778");
+
         book.DisplayInfo();
-    }
+        book1.DisplayInfo();
+    }   
 }
