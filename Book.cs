@@ -13,14 +13,14 @@ namespace Library
         string ISBN;
 
         // Example of a constructor that allows us to 'construct' a new Book object
-        Book (string bookTitle, string bookAuthor, string bookISBN)
+        public Book (string bookTitle, string bookAuthor, string bookISBN)
         {
             this.Title = bookTitle;
             this.Author = bookAuthor;
             this.ISBN = bookISBN;
         }
 
-        void DisplayInfo()
+        public void DisplayInfo()
         {
             Console.WriteLine($"Book title: {Title}");
             Console.WriteLine($"Book author: {Author}");
